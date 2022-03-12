@@ -1,0 +1,114 @@
+/*EDIÇÃO DAS IMAGENS*/
+.img-camera {
+    height: 60vh;
+    margin: 30px auto;
+}
+
+.img-pessoa {
+    height: 50vh;
+    margin: 30px auto;
+}
+
+.img-camera,
+.img-pessoa {
+    min-width: 270px;
+}
+
+.conj-img {
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.img-ex {
+    margin: 40px auto;
+}
+
+/*FLEX-BOX GERAL*/
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*CONTAINERS*/
+.sobre {
+    background-color: #3A3A3A;
+    margin: 20px 60px;
+}
+
+.content1 {
+    height: auto;
+    margin: 30px;
+}
+
+.content2 {
+    height: auto;
+    margin: 50px;
+    padding: 20px;
+}
+
+/*TEXTOS*/
+h2 {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.txt {
+    background-color: #313131;
+    width: 55vw;
+    height: auto;
+    font-size: 20px;
+    padding: 30px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: justify;
+    margin: 30px auto;
+}
+
+.txt2 {
+    width: 50vw;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 1500px) {
+    .img-camera,
+    .img-pessoa {
+        width: 20vw;
+        height: auto;
+    }
+
+    .sobre {
+        margin: 20px 100px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .txt,
+    .txt2 {
+        height: auto;
+        width: auto;
+        margin: 20px 0px;
+    }
+
+    .txt,
+    .txt2 {
+        order: -1;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 750px) {
+    .sobre {
+        margin: 30px 20px;
+    }
+
+    .content1,
+    .content2 {
+        margin: 10px;
+    }
+}
